@@ -11,27 +11,43 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+<!DOCTYPE html>
+<html>
+<body>
 
-- Bulleted
-- List
+<h2>JavaScript Statements</h2>
 
-1. Numbered
-2. List
+<p>JavaScript code blocks are written between { and }</p>
 
-**Bold** and _Italic_ and `Code` text
+<button type="button" onclick="myFunction()">Click Me!</button>
+<button type="button" onclick="myFunction1()">Click another Me!</button>
+<button type="button" onclick="myFunction2()">Click me to say yes or no!</button>
+<button type="button" onclick="myFunction3()">The Fourth Button</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
 
-[Link](url) and ![Image](src)
-```
+<script>
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello Dolly!";
+  document.getElementById("demo2").innerHTML = "How are you?";
+  document.getElementById("demo3").innerHTML = "Are you Good?";
+}
+function myFunction1() {
+  document.getElementById("demo4").innerHTML = "Demo4 Says yes!";
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+}
+function myFunction2() {
+  document.getElementById("demo4").innerHTML = "Demo4 Says no!";
 
-### Jekyll Themes
+}
+function myFunction3() {
+  document.getElementById("demo5").innerHTML = "The fourth button!";
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/OliviaFortune/TestKill.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+}
+</script>
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</body>
+</html> 
